@@ -8,5 +8,12 @@
 			<result name="success">/success.jsp</result>
 			<result name="failure">/error.jsp</result>
 		</action>
+		
+	</package>
+	<package name="login" namespace="/" extends="struts-default">
+		<action name="loginActionTest" class="edu.nitish.login.LoginAction">
+			<result name="success">/searchForm.jsp</result>
+			<result name="failure">/login.jsp</result>
+		</action>
 	</package>
 </struts>
