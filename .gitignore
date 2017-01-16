@@ -1,0 +1,6 @@
+!src
+!web
+/.project
+/.classpath
+/build/*
+/.settings
