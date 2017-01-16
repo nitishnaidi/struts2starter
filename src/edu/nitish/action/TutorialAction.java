@@ -1,8 +1,10 @@
 package edu.nitish.action;
 
+import com.opensymphony.xwork2.Action;
+
 import edu.nitish.service.StarterService;
 
-public class TutorialAction {
+public class TutorialAction implements Action{
 	private String tutorialSiteName;
 	private String language;
 	private int age;
@@ -10,7 +12,7 @@ public class TutorialAction {
 	public String execute() {
 		StarterService starterService = new StarterService();
 		setTutorialSiteName(starterService.getBestTutorialSite(language, age));
-		return "success";
+		return SUCCESS;
 	}
 
 	public String getTutorialSiteName() {

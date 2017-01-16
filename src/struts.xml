@@ -3,17 +3,17 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
+	<include file="login.xml"/>
 	<package name="default" namespace="/tutorials" extends="struts-default">
 		<action name="getTutorial" class="edu.nitish.action.TutorialAction">
 			<result name="success">/success.jsp</result>
 			<result name="failure">/error.jsp</result>
 		</action>
-		
 	</package>
-	<package name="login" namespace="/" extends="struts-default">
-		<action name="loginActionTest" class="edu.nitish.login.LoginAction">
-			<result name="success">/searchForm.jsp</result>
-			<result name="failure">/login.jsp</result>
+	
+	<package name="seach" namespace="/" extends="struts-default">
+		<action name="searchForm">
+			<result>/searchForm.jsp</result>
 		</action>
 	</package>
 </struts>

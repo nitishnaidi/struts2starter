@@ -1,8 +1,10 @@
 package edu.nitish.login;
 
+import com.opensymphony.xwork2.Action;
+
 import edu.nitish.service.LoginService;
 
-public class LoginAction {
+public class LoginAction implements Action{
 	private String username;
 	private String password;
 	
