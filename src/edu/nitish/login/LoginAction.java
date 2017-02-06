@@ -5,9 +5,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import edu.nitish.service.LoginService;
 
 public class LoginAction extends ActionSupport{
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	private String username;
 	private String password;

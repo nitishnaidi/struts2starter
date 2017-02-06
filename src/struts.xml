@@ -6,7 +6,7 @@
 	<include file="login.xml"/>
 	<package name="default" namespace="/tutorials" extends="struts-default">
 		<action name="getTutorial" class="edu.nitish.action.TutorialAction">
-			<result name="success">/success.jsp</result>
+			<result name="success">/insertQuestion.jsp</result>
 			<result name="failure">/error.jsp</result>
 		</action>
 	</package>
@@ -14,6 +14,13 @@
 	<package name="seach" namespace="/" extends="struts-default">
 		<action name="searchForm">
 			<result>/searchForm.jsp</result>
+		</action>
+	</package>
+	
+	<package name="insert" namespace="/tutorials" extends="struts-default">
+		<action name="insertQuestion" class="edu.nitish.action.QuestionAction">
+			<result name="success">/success.jsp</result>
+			<result name="failure">/error.jsp</result>
 		</action>
 	</package>
 </struts>

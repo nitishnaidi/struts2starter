@@ -9,8 +9,8 @@
 </head>
 <body>
 	<s:form action="tutorials/getTutorial">
-		<s:textarea label="Enter Language" key="language"/>
-		<s:textarea label="Enter Your age here" key="age"/>
+		<s:textfield label="Enter Language" key="language"/>
+		<s:textfield label="Enter Your age here" key="age"/>
 		<s:submit/>
 	</s:form>
 </body>
